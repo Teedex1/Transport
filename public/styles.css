@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #797777;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-menu .nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar-menu .nav-link:hover {
+  color: #007bff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.rides-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ride {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: calc(25% - 20px);
+  max-width: 250px;
+  transition: transform 0.3s;
+}
+
+.ride:hover {
+  transform: translateY(-5px);
+}
+
+.ride.from-lagos { background-color: #796b67; }
+.ride.from-osogbo { background-color: #8bc34a; }
+.ride.from-ibadan { background-color: #2196f3; }
+.ride.from-anambra { background-color: #ffeb3b; }
+.ride.from-kano { background-color: #ff4081; }
+.ride.from-port-harcourt { background-color: #9c27b0; }
+.ride.from-uyo { background-color: #4caf50; }
+.ride.from-aba { background-color: #ffc107; }
+
+.ride-info {
+  margin-bottom: 10px;
+}
+
+.ride-info p {
+  margin: 5px 0;
+}
+
+.book-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+#map {
+  height: 400px;
+  margin-top: 20px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Transport Booking</a>
+      <div class="navbar-menu">
+        <a href="#" class="nav-link" onclick="showSection('home')">Home</a>
+        <a href="#" class="nav-link" onclick="showSection('bookings')">Bookings</a>
+        <a href="#" class="nav-link" onclick="showSection('tracking')">Track Bus</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="home" class="section active">
+      <h1>Welcome to Transport Booking</h1>
+      <p>Book your rides and track your bus location in real-time.</p>
+    </div>
+
+    <div id="bookings" class="section">
+      <h1>Available Rides</h1>
+      <div id="rides-list" class="rides-list">
+        <!-- Rides will be dynamically added here -->
+      </div>
+    </div>
+
+    <div id="tracking" class="section">
+      <h1>Track Your Bus</h1>
+      <div id="map" class="map"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
