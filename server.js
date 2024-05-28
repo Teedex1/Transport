@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -65,3 +66,4 @@ setInterval(() => {
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+>>>>>>> master
